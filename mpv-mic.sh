@@ -59,8 +59,6 @@ cleanup() {
     exit 0
 }
 
-# Register traps
-trap cleanup SIGINT SIGTERM EXIT
 
 # Render script header
 print_header() {
@@ -377,6 +375,8 @@ play_queue() {
 
 # Main Execution Flow
 main() {
+    # Register traps
+    trap cleanup SIGINT SIGTERM EXIT
     print_header
     check_dependencies
     check_audio_server
@@ -390,4 +390,6 @@ main() {
 }
 
 # Invoke main
-main
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+    main "$@"
+fi
