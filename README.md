@@ -1,4 +1,22 @@
-# PipeWire Virtual Microphone Soundboard (`mpv-mic`)
+<div align="center">
+
+<img src="assets/logo.svg" alt="mpv-mic Logo" width="160" />
+
+# mpv-mic
+### PipeWire Virtual Microphone Soundboard & Media Loopback Injector
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Audio: PipeWire](https://img.shields.io/badge/Audio-PipeWire%20%7C%20pw--loopback-blueviolet.svg)](#)
+[![Player: MPV](https://img.shields.io/badge/Player-MPV%20IPC-red.svg)](https://mpv.io)
+[![Platform: Linux](https://img.shields.io/badge/Platform-Linux%20Desktop-informational.svg)](#)
+
+<p align="center">
+  <b>A lightweight, minimal CLI utility that creates virtual PipeWire microphone sinks and seamlessly streams audio files into Discord, Zoom, OBS, and voice apps via MPV.</b>
+</p>
+
+</div>
+
+---
 
 A lightweight, minimal Bash script that creates a virtual microphone using PipeWire/PulseAudio (`pw-loopback`) and streams selected local audio/video files into it using `mpv`. Perfect for injecting sound effects, music, or pre-recorded audio directly into applications like Discord, Zoom, OBS, Teams, and more.
 
